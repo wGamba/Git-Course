@@ -1,6 +1,6 @@
 # SCESI Git Course
 
-In this project, I'll learn Git using the repository as class notes (I'll do it in English for my comfort).
+In this project, I'll learn Git using the repository as class notes (I'll do it in English for my personal enjoy).
 
  ## Author 
 
@@ -38,7 +38,8 @@ In this project, I'll learn Git using the repository as class notes (I'll do it 
 Git stores a full repository copy locally, enabling offline work, and syncs with remote repositories for collaboration and backups.
 
 <p align="center">
-    <img src="assets/Repo_sync.png" alt="Repo Sync">
+    <img src="assets/Repo_sync.png"
+    alt="Repo Sync">
 </p>
 
 
@@ -71,4 +72,17 @@ In Git, a state refers to the status of your files in the version control proces
 <p align="center">
     <img src="assets/Git_states.png"
     alt="Git States">
+</p>
+
+### What is a commit?
+
+A commit is a snapshot of your project's changes at a specific point in time. It acts as a save point, allowing you to track and revert changes if needed. 
+
+Each commit contains a unique identifier, a description of the changes made, and additional details such as the author and the time when the commit was made.
+
+**In short, it's like a checkpoint in video games.**
+
+<p align="center">
+    <img src="assets/bonfire.gif"
+    alt="Bonfire">
 </p>
