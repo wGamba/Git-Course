@@ -102,3 +102,16 @@ The first step is to check the current status of your repository using the comma
 * Files that are staged and ready to be committed.
 * Untracked files (new files that Git is not yet tracking).
 
+#### Git Add
+
+Once you know which files you want to include in your commit, you need to stage them using `git add`command. For example:
+
+<p align="center"><strong><code>git add &lt;file&gt;</code></strong></p>
+<p align="center"><small>(specific file)</small></p>
+
+<p align="center"><strong>or</strong></p>
+
+<p align="center"><strong><code>git add .</code></strong></p>
+<p align="center"><small>(all modified files)</small></p>
+
+
