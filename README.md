@@ -36,7 +36,10 @@ In this project, I'll learn Git using the repository as class notes (I'll do it 
 
 Git stores a full repository copy locally, enabling offline work, and syncs with remote repositories for collaboration and backups.
 
-![Repo Sync](assets/Repo_sync.png)
+<p align="center">
+    <img src="assets/Repo_sync.png" alt="Repo Sync">
+</p>
+
 
 ### What is a repository?
 
@@ -64,4 +67,7 @@ In Git, a state refers to the status of your files in the version control proces
 * **Staged** : The file is marked to be included in the next commit.
 * **Commited** : The changes are saved to the local repository.
 
-![Git States](assets/Git_states.png)
+<p align="center">
+    <img src="assets/Git_states.png"
+    alt="Git States">
+</p>
