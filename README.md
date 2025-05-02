@@ -131,3 +131,8 @@ It is important to understand that these changes will be saved in your local rep
     <img src="assets/Git_workflow.png"
     alt="Bonfire">
 </p>
+
+### What is the Head?
+
+In Git, the **HEAD** is a pointer that represents the current branch and commit you are working on. When you make a new commit, the HEAD moves forward to point to that new commit. It helps Git keep track of your current position in the repository's history.
+
