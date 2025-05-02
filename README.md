@@ -115,3 +115,19 @@ Once you know which files you want to include in your commit, you need to stage 
 <p align="center"><small>(all modified files)</small></p>
 
 
+#### Git Commit
+
+After staging the files, you can create a commit using the `git commit` command. For example:
+
+<p align="center"><strong><code>git commit</code></strong></p> <p align="center"><small>(add commit message in your IDE)</small></p>
+
+<p align="center"><strong>or</strong></p> 
+
+<p align="center"><strong><code>git commit -m "Your commit message"</code></strong></p> <p align="center"><small>(add commit message directly)</small></p>
+
+It is important to understand that these changes will be saved in your local repository. From this point on, to undo these changes, you will need to revert them by creating a new commit in the repository's change history.
+
+<p align="center">
+    <img src="assets/Git_workflow.png"
+    alt="Bonfire">
+</p>
