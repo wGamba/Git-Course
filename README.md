@@ -4,7 +4,7 @@ In this project, I'll learn Git using the repository as class notes (I'll do it 
 
  ## Author 
 
- ***wGamba***
+ <a href="https://wgamba.github.io/" target="_blank">***wGamba***</a>
 
  ## First class: Git Introduction 
 
@@ -23,7 +23,8 @@ In this project, I'll learn Git using the repository as class notes (I'll do it 
 ### History
 * **1990**: Early VCS tools like RCS and CVS emerged.
 
-* **2005**: Linus Torvalds created Git for Linux kernel development.
+* **2005**: <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank">Linus Torvalds</a> created Git for Linux kernel development.
+
 
 * **2008**: GitHub launched, boosting Git's adoption. It was initially created using Ruby.
 
