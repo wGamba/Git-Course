@@ -80,9 +80,25 @@ A commit is a snapshot of your project's changes at a specific point in time. It
 
 Each commit contains a unique identifier, a description of the changes made, and additional details such as the author and the time when the commit was made.
 
-**In short, it's like a checkpoint in video games.**
-
+<p align="center"><strong>In short, it's like a checkpoint in video games.</strong></p>
+ 
 <p align="center">
     <img src="assets/bonfire.gif"
     alt="Bonfire">
 </p>
+
+### How do I make a commit?
+
+#### Git Status
+
+The first step is to check the current status of your repository using the command:
+
+<p align="center"><strong><code>git status</code></strong></p>
+
+
+ This command checks the status of your files and shows:
+
+* Files that have been modified but not yet staged.
+* Files that are staged and ready to be committed.
+* Untracked files (new files that Git is not yet tracking).
+
