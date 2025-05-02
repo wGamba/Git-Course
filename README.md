@@ -44,6 +44,10 @@ A repository, often referred to as a "repo," is a storage location where your pr
 
 ### Git Commands 
 
+#### Git help
+
+**`git --help`** displays a list of available Git commands and their descriptions. Use it to get quick help or details about specific commands.
+
 #### Git init
 
 **`git init`** initializes a new Git repository in your project directory. It creates a hidden `.git` folder to track changes and manage version control. Use it to start versioning your project.
