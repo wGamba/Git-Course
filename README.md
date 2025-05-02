@@ -36,7 +36,7 @@ In this project, I'll learn Git using the repository as class notes (I'll do it 
 
 Git stores a full repository copy locally, enabling offline work, and syncs with remote repositories for collaboration and backups.
 
-![Repo Sync](assets/github.png)
+![Repo Sync](assets/Repo_sync.png)
 
 ### What is a repository?
 
@@ -54,3 +54,14 @@ A repository, often referred to as a "repo," is a storage location where your pr
 
 **`<directory Project> git init`** It is possible to create a Git repository in an already existing directory by using the command `<directory Project> git init`. This initializes Git in the specified directory without affecting its current files. 
 
+## Second class: States and Commits
+
+### The three states of Git
+
+In Git, a state refers to the status of your files in the version control process. 
+
+* **Modified** : The file has been created, changed or delted but not yet staged for commit. 
+* **Staged** : The file is marked to be included in the next commit.
+* **Commited** : The changes are saved to the local repository.
+
+![Git States](assets/Git_states.png)
