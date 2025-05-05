@@ -157,6 +157,42 @@ It is important to understand that these changes will be saved in your local rep
     alt="Bonfire">
 </p>
 
+### How to untrack a file?
+
+Create a `.gitignore` file in your project and add the following patterns to tell Git which files or folders to ignore:
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Pattern in .gitignore</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ignore all <code>.log</code> files</td>
+      <td><code>*.log</code></td>
+    </tr>
+    <tr>
+      <td>Ignore the <code>node_modules</code> folder</td>
+      <td><code>node_modules/</code></td>
+    </tr>
+    <tr>
+      <td>Ignore a specific file</td>
+      <td><code>secrets.env</code></td>
+    </tr>
+  </tbody>
+</table>
+
+#### What to do if the file is already commited?
+
+If the file is already already committed, simply adding it to `.gitignore` won’t stop Git from tracking it.  
+You need to **untrack it manually** using this command:
+
+<p align="center"><strong><code>git rm --cached secrets.env
+</code></strong></p> 
+
+
 ### What is the Head?
 
 In Git, the **HEAD** is a pointer that represents the current branch and commit you are working on. When you make a new commit, the HEAD moves forward to point to that new commit. It helps Git keep track of your current position in the repository's history.
@@ -169,12 +205,24 @@ Additionally, `git log` helps track the **HEAD** by showing the most recent comm
 
 Example usage:
 
-<p align="center"><strong><code>git log</code></strong></p> 
-<p align="center"><small>(Shows full commit detail)</small></p>
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>git log</code></td>
+      <td>Shows full commit detail</td>
+    </tr>
+    <tr>
+      <td><code>git log --oneline</code></td>
+      <td>Shows each commit in one line</td>
+    </tr>
+  </tbody>
+</table>
 
-<p align="center"><strong>or</strong></p> 
-
-<p align="center"><strong><code>git log --oneline</code></strong></p> 
-<p align="center"><small>(Shows each commit in one line)</small></p>
 
 ## Third class: Branchs, Merge and Conflicts
