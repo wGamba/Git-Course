@@ -65,6 +65,8 @@ A repository, often referred to as a "repo," is a storage location where your pr
 
 In Git, a state refers to the status of your files in the version control process. 
 
+
+
 * **Modified** : The file has been created, changed or delted but not yet staged for commit. 
 * **Staged** : The file is marked to be included in the next commit.
 * **Commited** : The changes are saved to the local repository.
@@ -106,24 +108,47 @@ The first step is to check the current status of your repository using the comma
 
 Once you know which files you want to include in your commit, you need to stage them using `git add`command. For example:
 
-<p align="center"><strong><code>git add &lt;file&gt;</code></strong></p>
-<p align="center"><small>(specific file)</small></p>
+<table align="center">
+  <tr>
+    <th>Command</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><code>git add &lt;file&gt;</code></td>
+    <td>Stage a specific file</td>
+  </tr>
+  <tr>
+    <td><code>git add .</code></td>
+    <td>Stage all modified files</td>
+  </tr>
+</table>
 
-<p align="center"><strong>or</strong></p>
-
-<p align="center"><strong><code>git add .</code></strong></p>
-<p align="center"><small>(all modified files)</small></p>
-
+**Tip :** Use `git restore staged <file>` to unstage.
 
 #### Git Commit
 
 After staging the files, you can create a commit using the `git commit` command. For example:
 
-<p align="center"><strong><code>git commit</code></strong></p> <p align="center"><small>(add commit message in your IDE)</small></p>
-
-<p align="center"><strong>or</strong></p> 
-
-<p align="center"><strong><code>git commit -m "Your commit message"</code></strong></p> <p align="center"><small>(add commit message directly)</small></p>
+<p align="center">
+  <table>
+    <tr>
+      <th>Command</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><code>git commit</code></td>
+      <td>Add commit message in your IDE</td>
+    </tr>
+    <tr>
+      <td><code>git commit -m "Your commit message"</code></td>
+      <td>Add commit message directly</td>
+    </tr>
+    <tr>
+      <td><code>git commit --amend</code></td>
+      <td>Modify last commit message or include new staged changes</td>
+    </tr>
+  </table>
+</p>
 
 It is important to understand that these changes will be saved in your local repository. From this point on, to undo these changes, you will need to revert them by creating a new commit in the repository's change history.
 
@@ -136,3 +161,20 @@ It is important to understand that these changes will be saved in your local rep
 
 In Git, the **HEAD** is a pointer that represents the current branch and commit you are working on. When you make a new commit, the HEAD moves forward to point to that new commit. It helps Git keep track of your current position in the repository's history.
 
+### Git log 
+
+The `git log` command displays the commit history of your repository. It shows details such as commit hashes, author names, dates, and commit messages. This is useful for reviewing changes made over time.
+
+Additionally, `git log` helps track the **HEAD** by showing the most recent commit it points to. This allows you to understand your current position in the repository's history and navigate between commits if needed.
+
+Example usage:
+
+<p align="center"><strong><code>git log</code></strong></p> 
+<p align="center"><small>(Shows full commit detail)</small></p>
+
+<p align="center"><strong>or</strong></p> 
+
+<p align="center"><strong><code>git log --oneline</code></strong></p> 
+<p align="center"><small>(Shows each commit in one line)</small></p>
+
+## Third class: Branchs, Merge and Conflicts
