@@ -161,7 +161,7 @@ It is important to understand that these changes will be saved in your local rep
 
 Create a `.gitignore` file in your project and add the following patterns to tell Git which files or folders to ignore:
 
-<table>
+<table align="center">
   <thead>
     <tr>
       <th>Description</th>
@@ -226,3 +226,124 @@ Example usage:
 
 
 ## Third class: Branchs, Merge and Conflicts
+### Branch
+
+#### What is a Branch?
+
+A branch in Git is a lightweight, movable pointer to a commit. It allows you to work isolated from the main codebase. By default, every Git repository starts with a branch named `main` (or `master` in older versions).
+
+Branches enable parallel development, making it easier to collaborate and manage changes without affecting the main codebase until you're ready to merge.
+
+##### Key Commands for Branch Management
+
+<table align="center">
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>git branch</code></td>
+      <td>Lists all branches in the repository</td>
+    </tr>
+    <tr>
+      <td><code>git branch &lt;branch-name&gt;</code></td>
+      <td>Creates a new branch</td>
+    </tr>
+    <tr>
+      <td><code>git checkout &lt;branch-name&gt;</code></td>
+      <td>Switches to the specified branch</td>
+    </tr>
+    <tr>
+      <td><code>git switch &lt;branch-name&gt;</code></td>
+      <td>Alternative command to switch branches</td>
+    </tr>
+    <tr>
+      <td><code>git branch -d &lt;branch-name&gt;</code></td>
+      <td>Deletes a branch</td>
+    </tr>
+  </tbody>
+</table>
+
+<p align="center">
+    <img src="assets/Git_branching.png"
+    alt="Git Branching">
+</p>
+
+#### Why Use Branches?
+
+* **Isolation**: Keep your work separate from the main codebase.
+* **Collaboration**: Multiple developers can work on different branches simultaneously.
+* **Experimentation**: Test new ideas without risking the stability of the main branch.
+
+### Merge
+#### Git Merge
+
+The `git merge` command is used to combine changes from one branch into another. Typically, you merge a feature branch into the main branch after completing development. Merging helps integrate changes and maintain a unified codebase.
+
+##### Types of Merge
+
+1. **Fast-forward merge**: Occurs when the branch being merged has no additional commits compared to the current branch. Git simply moves the pointer forward.
+2. **Three-way merge**: Happens when both branches have diverged. Git creates a new commit to combine the changes.
+
+##### Key Options for `git merge`
+
+<table align="center">
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>--edit</code></td>
+      <td>Allows you to edit the default merge commit message</td>
+    </tr>
+    <tr>
+      <td><code>--no-commit</code></td>
+      <td>Prepares the merge but does not create a commit automatically</td>
+    </tr>
+  </tbody>
+</table>
+
+##### Example Usage
+
+1. Merge a branch and edit the commit message:
+   ```bash
+   git merge feature-branch --edit
+   ```
+
+2. Merge a branch without committing immediately:
+   ```bash
+   git merge feature-branch --no-commit
+   ```
+
+This allows you to review or make additional changes before finalizing the merge.
+
+### Delete Branches
+
+#### Why delete branches?
+
+Because it`s a good practice, and the essence of bran ches is that they should have a simple purpose and a short period of time.
+
+<table align="center">
+  <thead>
+    <tr>
+      <th>Action</th>
+      <th>Command</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Delete local branch</td>
+      <td><code>git branch -d &lt;branch-name&gt;</code></td>
+    </tr>
+    <tr>
+      <td>Delete remote branch</td>
+      <td><code>git push origin --delete &lt;branch-name&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
