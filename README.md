@@ -205,7 +205,7 @@ Additionally, `git log` helps track the **HEAD** by showing the most recent comm
 
 Example usage:
 
-<table>
+<table align="center">
   <thead>
     <tr>
       <th>Command</th>
@@ -347,3 +347,41 @@ Because it`s a good practice, and the essence of bran ches is that they should h
     </tr>
   </tbody>
 </table>
+
+### Git conflict
+
+**Conflicts in Git**
+
+What happens if, when trying to merge two branches, the destination branch has made changes to the same lines of a file as the ones we want to merge?
+
+<p align="center"><strong>We would have conflicts</strong></p>
+
+<p align="center">
+    <img src="assets/Merge-conflict.png"
+    alt="Git Branching">
+</p>
+
+#### Resolving Git conflicts
+
+
+When resolving conflicts in Git, you need to decide how to handle the changes between the branches. The conflict occurs when two branches modify the same lines of a file differently. Here's how to resolve them:
+
+**Decide between the changes:**
+   - Keep the changes from the `main` branch.
+   - Keep the changes from the `changes` branch.
+   - Modify the changes to create a custom merge.
+
+**Conflict Markers in the File:**
+   When a conflict occurs, Git marks the conflicting section in the file like this:
+   ```plaintext
+   <<<<<<< HEAD
+   <p>This is our initial content</p>
+   <p>New content to the file</p>
+   =======
+   <p>Completely different content</p>
+   >>>>>>> changes
+   ```
+   - **Above `=======`**: Content from the current branch (`HEAD`).
+   - **Below `=======`**: Content from the branch being merged (`changes`).
+
+
