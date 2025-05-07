@@ -4,7 +4,7 @@ In this project, I'll learn Git using the repository as class notes (I'll do it 
 
 <p align="center">
     <img src="assets/Git-logo.png"
-    alt="Git Branching">
+    alt="Git Logo">
 </p>
 
  ## Author 
@@ -404,4 +404,67 @@ When resolving conflicts in Git, you need to decide how to handle the changes be
    ```
    - **Above `=======`**: Content from the current branch (`HEAD`).
    - **Below `=======`**: Content from the branch being merged (`changes`).
+
+### Fourth class: GitHub
+
+### What is GitHub?
+
+GitHub is a web-based platform for version control and collaboration, built on top of Git. It allows developers to host, manage, and share their code repositories while providing tools for collaboration, issue tracking, and project management.
+
+### How to Create a Repository on GitHub?
+
+Creating a repository on GitHub is a straightforward process. Follow these steps:
+
+1. **Log in to GitHub**  
+  Go to [GitHub](https://github.com/) and log in with your credentials.
+
+2. **Navigate to the New Repository Page**  
+  Click the `+` icon in the top-right corner of the page and select **New repository**.
+
+3. **Fill in Repository Details**  
+  - **Repository Name**: Enter a unique name for your repository.
+  - **Description** (optional): Add a brief description of your project.
+  - **Visibility**: Choose between **Public** (visible to everyone) or **Private** (only accessible to you and collaborators).
+
+4. **Initialize the Repository**  
+  - Optionally, check the box to **Add a README file**. This file is often used to describe your project.
+  - You can also add a `.gitignore` file to specify files Git should ignore.
+  - Optionally, choose a license for your project.
+
+5. **Create the Repository**  
+  Click the **Create repository** button to finalize.
+
+6. **Clone the Repository**  
+  After creating the repository, you can clone it to your local machine using the command:
+  ```bash
+  git clone <repository-url>
+  ```
+
+
+<p align="center">
+  <img src="assets/GitHub-logo.png"
+  alt="GitHub Logo">
+</p>
+
+### Github extra features
+### GitHub Extra Features
+
+#### Pull Requests
+
+A **pull request** is a feature in GitHub that allows developers to propose changes to a repository. It facilitates code review and collaboration before merging changes into the main branch.
+
+#### Issues
+
+GitHub **Issues** are used to track tasks, enhancements, and bugs for your projects. They provide a way to discuss and manage work collaboratively.
+
+#### GitHub Pages
+
+**GitHub Pages** allows you to host static websites directly from your repository. It is commonly used for project documentation or personal portfolios.
+
+**Github Page example:**
+
+<p align="center">
+  <a href="https://wgamba.github.io/">https://wgamba.github.io/</a>
+</p>
+
 
