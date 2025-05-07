@@ -2,6 +2,11 @@
 
 In this project, I'll learn Git using the repository as class notes (I'll do it in English for my personal enjoy).
 
+<p align="center">
+    <img src="assets/Git-logo.png"
+    alt="Git Branching">
+</p>
+
  ## Author 
 
  <a href="https://wgamba.github.io/" target="_blank">***wGamba***</a>
@@ -306,8 +311,24 @@ The `git merge` command is used to combine changes from one branch into another.
       <td><code>--no-commit</code></td>
       <td>Prepares the merge but does not create a commit automatically</td>
     </tr>
-  </tbody>
-</table>
+    <tr>
+      <td><code>git branch -d &lt;branch-name&gt;</code></td>
+      <td>Deletes a branch after its changes have been successfully merged into another branch</td>
+    </tr>
+    <tr>
+      <td><code>git branch -D &lt;branch-name&gt;</code></td>
+      <td>Forces deletion of a branch even if its changes have not been merged into another branch (unmerged changes will be lost)</td>
+    </tr>
+    <tr>
+      <td><code>git merge --abort</code></td>
+      <td>Cancels the merge process in case of conflicts and restores the state before the merge</td>
+    </tr>
+    <tr>
+      <td><code>git merge --no-ff &lt;branch-name&gt;</code></td>
+      <td>Performs a "no fast-forward" merge, creating a new merge commit even if Git could merge automatically</td>
+    </tr>
+    </tbody>
+  </table>
 
 ##### Example Usage
 
@@ -383,5 +404,4 @@ When resolving conflicts in Git, you need to decide how to handle the changes be
    ```
    - **Above `=======`**: Content from the current branch (`HEAD`).
    - **Below `=======`**: Content from the branch being merged (`changes`).
-
 
