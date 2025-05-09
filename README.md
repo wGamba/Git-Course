@@ -513,3 +513,22 @@ Gitflow is a branching model for Git that defines a strict workflow:
 
 5. **hotfix** → for quick fixes on production
 
+### GitHub Flow
+
+GitHub Flow is a Git workflow designed for continuous deployment projects. It's simpler than Gitflow.
+
+Basically, it works like this:
+
+* You always work off the **main branch** (or master).
+
+* You **create small branches** for each change (feature, fix, etc.).
+
+* You open a **pull request** (PR) to discuss and review the change.
+
+* Once it's approved, you **merge it into main**.
+
+* Deploy directly from main (to production or your environment).
+
+It's perfect for teams that work fast and need to move changes quickly without the heavier branch structure of Gitflow.
+
+### Trunk Based Devlopment
