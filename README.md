@@ -606,10 +606,32 @@ Sometimes, you may want to completely remove a commit from the history. You can 
   alt="Git Removing">
 </p>
 
+## Eighth class: Hooks, Aliases, and Git Tricks
 
+### Basic concepts
 
+Git includes several advanced features that can greatly enhance workflow efficiency and automation. Some of the most notable ones are:
 
+* **Hooks**: These are scripts that run automatically in response to specific Git events, such as `pre-commit` (before committing changes) or `post-merge` (after merging branches). Hooks allow you to customize and automate project-specific tasks, like running unit tests or notifying team members about important updates.
 
+* **Aliases**: Aliases are shortcuts that let you abbreviate long or frequently used Git commands. For example, you can set up an alias like `st` for `git status` or `cm` for `git commit -m`. This helps streamline your command-line work and saves time.
+
+* **Various Tricks**: In addition to hooks and aliases, advanced users often employ a range of tips and techniques to optimize their Git workflow. These can include combining Git commands into efficient sequences, using external tools to extend Git’s capabilities, or integrating Git with other development and automation tools.
+
+### Useful Commands
+
+Here are some handy Git commands to enhance your workflow:
+
+* **`git hooks`**: Allows you to manage hooks within a repository. You can add, remove, or modify hook scripts based on the project’s needs.
+
+* **`git config --global alias.<alias_name> "<command>"`**: Creates a global alias for a Git command. This is useful for setting up custom shortcuts that apply across all repositories.
+
+In addition to these commands, specific tricks can vary depending on the user’s needs and the particularities of the project. Common examples include optimizing Git configurations, automating repetitive tasks with custom scripts, or using third-party extensions to expand Git’s capabilities.
+
+<p align="center">
+  <img src="assets/Git-Hooks.jpg"
+  alt="Git Hooks">
+</p>
 
 
 
