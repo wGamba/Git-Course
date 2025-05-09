@@ -587,7 +587,24 @@ Trunk Based Development is ideal for teams practicing continuous integration (CI
 * Use the name of the action being performed in the branch
 * Include JIRA IDs or the ticket system IDs you use
 
+## Seventh class: Undo changes
 
+### Basic Concept
+In Git, it’s common to make mistakes or need to undo certain changes. Thankfully, Git provides several tools to revert modifications, reset files, and handle similar situations. These features help keep the project history clean and allow you to fix issues efficiently.
+
+### Reset
+The `git reset` command is used to undo changes in both the working directory and the staging area. Depending on the option you use — such as `--soft`, `--mixed`, or `--hard` — Git will decide how far back to roll and whether to keep the undone changes staged or remove them completely.
+
+### Revert
+If you need to undo the effects of a previous commit without altering the repository’s history, you can use `git revert`. This command creates a new commit that reverses the changes introduced by the specified commit. It’s especially useful when you want to maintain a clear and linear history without rewriting past commits.
+
+### Removing Commits
+Sometimes, you may want to completely remove a commit from the history. You can achieve this with commands like `git reset --hard` or `git rebase -i`. However, be cautious: rewriting history can lead to complications, especially when working in shared repositories with other collaborators.
+
+<p align="center">
+  <img src="assets/Removing-Git.png"
+  alt="Git Removing">
+</p>
 
 
 
