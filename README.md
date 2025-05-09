@@ -231,6 +231,7 @@ Example usage:
 
 
 ## Third class: Branchs, Merge and Conflicts
+
 ### Branch
 
 #### What is a Branch?
@@ -405,7 +406,7 @@ When resolving conflicts in Git, you need to decide how to handle the changes be
    - **Above `=======`**: Content from the current branch (`HEAD`).
    - **Below `=======`**: Content from the branch being merged (`changes`).
 
-### Fourth class: GitHub
+## Fourth class: GitHub
 
 ### What is GitHub?
 
@@ -447,7 +448,6 @@ Creating a repository on GitHub is a straightforward process. Follow these steps
 </p>
 
 ### Github extra features
-### GitHub Extra Features
 
 #### Pull Requests
 
@@ -466,5 +466,32 @@ GitHub **Issues** are used to track tasks, enhancements, and bugs for your proje
 <p align="center">
   <a href="https://wgamba.github.io/">https://wgamba.github.io/</a>
 </p>
+
+### Git commands to work with GitHub
+
+1. **Clone a Repository**  
+  Download a remote repository to your local machine:
+  ```bash
+  git clone <repository-url>
+  ```
+
+2. **Add a Remote**  
+  Link your local repository to a remote one:
+  ```bash
+  git remote add origin <repository-url>
+  ```
+
+3. **Push Changes**  
+  Upload your local commits to the remote repository:
+  ```bash
+  git push origin <branch-name>
+  ```
+
+4. **Pull Changes**  
+  Fetch and merge changes from the remote repository:
+  ```bash
+  git pull origin <branch-name>
+  ```
+
 
 
