@@ -547,3 +547,58 @@ Trunk Based Development is a Git workflow that focuses on continuous integration
 
 **Use Case**
 Trunk Based Development is ideal for teams practicing continuous integration (CI) and continuous deployment (CD). It promotes fast feedback loops, minimizes merge conflicts, and is perfect for agile, high-speed development environments.
+
+## Sixth class: Best Practices
+
+### What are best practices for?
+
+* It’s a standard followed by most development teams.
+
+* Resolving conflicts or issues during development becomes easier.
+
+* Your commit history is more readable.
+
+### How often should i commit?
+* It’s better to make small commits, grouping small improvements or actions, than to make one large commit with everything you want to do.
+
+* Committing often doesn’t mean you should make commits without purpose.
+
+### Writting good commits
+
+* Use verbs like: Add, Change, Fix, or Remove
+* Don't use "." or "..."; in the worst case, use a ","
+* Use a maximum of 50 characters for your commit
+* Add all the context that's needed
+* Use prefixes to make them more semantic
+
+#### Commit prefixes
+
+* **feat**: for a new feature for the user
+* **fix**: for a bug that affects the user
+* **perf**: for changes that improve site performance
+* **build**: for changes in the build system, deployment, or installation tasks
+* **ci**: for changes in continuous integration
+* **docs**: for changes in the documentation
+* **refactor**: for code refactoring, like renaming variables or functions
+
+### Use a good name for your branch
+
+* Be consistent when naming your branches
+* Use the name of the action being performed in the branch
+* Include JIRA IDs or the ticket system IDs you use
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
