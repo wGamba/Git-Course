@@ -493,5 +493,23 @@ GitHub **Issues** are used to track tasks, enhancements, and bugs for your proje
   git pull origin <branch-name>
   ```
 
+## Fifth class: Git Flow
 
+### What is a Git Flow?
+
+Gitflow is a Git workflow strategy that organizes how branches are used to manage features, releases, and fixes in a structured and consistent way across a team.
+
+### Gitflow
+
+Gitflow is a branching model for Git that defines a strict workflow:
+
+1. **main** → stable production branch
+
+2. **develop** → main development branch
+
+3. **feature** → for new features
+
+4. **release** → for preparing releases
+
+5. **hotfix** → for quick fixes on production
 
