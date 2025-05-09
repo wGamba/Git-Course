@@ -531,4 +531,19 @@ Basically, it works like this:
 
 It's perfect for teams that work fast and need to move changes quickly without the heavier branch structure of Gitflow.
 
-### Trunk Based Devlopment
+### Trunk Based Development
+
+Trunk Based Development is a Git workflow that focuses on continuous integration with a single primary branch.
+
+1. **Trunk** (main): → the central development branch where all code is merged frequently.
+
+2. **Feature Branches**: small branches created for specific changes (feature, bugfix, etc.).
+
+3. **Frequent Merges**: developers merge their feature branches into trunk regularly, often multiple times a day.
+
+4. **Continuous Integration**: code is integrated into the main branch continuously, allowing for faster feedback and deployment.
+
+5. **Short-lived Branches**: feature branches are short-lived, preventing long-running branches and reducing merge conflicts.
+
+**Use Case**
+Trunk Based Development is ideal for teams practicing continuous integration (CI) and continuous deployment (CD). It promotes fast feedback loops, minimizes merge conflicts, and is perfect for agile, high-speed development environments.
